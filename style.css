@@ -1,0 +1,40 @@
+.navbar {
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    color: black;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+body {
+    margin: 0px;
+}
+
+img 
+
+.mainPageContent {
+    margin: auto;
+}
+
+.mPCtext {
+    margin-left: 20px;
+}
+
+.NaseSluzby {
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+
+p:hover {
+    color: aqua;
+}
