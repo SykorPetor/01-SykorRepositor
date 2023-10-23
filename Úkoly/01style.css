@@ -1,0 +1,22 @@
+body {
+    background-color: burlywood;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    color: black;
+
+
+}
+
+.cardBody {
+    display: flex;
+    justify-content: center;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
