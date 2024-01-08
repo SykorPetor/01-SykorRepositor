@@ -1,0 +1,37 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh;
+    border: 1vh solid #000;
+    border-radius: 3vh;
+    max-width: 50vh;
+    max-height: 40vh;
+}
+
+.zase {
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+    border: 3px solid turquoise;
+    border-radius: 4px;
+}
+
+input[type=password] {
+    border: 3px solid turquoise;
+    border-radius: 4px;
+}
+
+.button {
+    border: 3px solid turquoise;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: lightskyblue;
+    color: white;
+}
