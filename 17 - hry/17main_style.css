@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.gamesRow1 {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+button {
+    width: 20vh;
+    height: 5vh;
+    background-color: purple;
+    border-radius: 1vh;
+    border: none;
+    color: white;
+}
