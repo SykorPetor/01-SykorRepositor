@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="19style.css">
+    <title>idk už</title>
+</head>
+
+<body>
+    <h1>Sklad</h1>
+
+    <div id="produkty-list">
+    </div>
+
+    <div>
+        <h2 class="h2">Operace:</h2>
+        <div class="section">
+            <button onclick="nejdrazsiProdukt()" class="button">Nejdražší produkt</button>
+        </div>
+        <div class="section">
+            <label for="filtr-mnozstvi" class="label">Filtrovat podle množství:</label>
+            <input type="number" id="filtr-mnozstvi" class="input">
+            <button onclick="filtrujPodleMnozstvi()" class="button">Filtrovat</button>
+        </div>
+        <div class="section">
+            <button onclick="spocitejCelkovouHodnotu()" class="button">Spočítat celkovou hodnotu</button>
+        </div>
+        <div class="section">
+            <label for="aktualizace-produktu" class="label">Aktualizovat počet kusů:</label>
+            <input type="text" id="aktualizace-produktu" class="input">
+            <button onclick="aktualizujPocetProduktu()" class="button">Aktualizovat</button>
+        </div>
+    </div>
+
+    <script src="19script.js"></script>
+</body>
+
+</html>

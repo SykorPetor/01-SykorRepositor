@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: wheat;
+}
+
+.button {
+    height: 10vh;
+    width: 30vh;
+    font-size: 3vh;
+    border: none;
+    border-radius: 2vh;
+    background-color: coral;
+}
+
+.input {
+    height: 10vh;
+    width: 30vh;
+    border-radius: 2vh;
+}
+
+.label {
+    font-size: 5vh;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.section {
+    margin: 5vh;
+}
