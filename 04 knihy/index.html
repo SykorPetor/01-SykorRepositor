@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>pouzivam konzoli</p>
+    <h1>Books</h1><br>
+
+    <div class="inputs">
+        <input id="title" placeholder="title">
+        <input id="author" placeholder="author">
+        <input id="genre" placeholder="genre">
+        <input id="year" placeholder="year">
+    </div>
+
+    <br>
+    <br>
+
+    <div class="buttons">
+        <button onclick="addBok()">add book</button>
+        <button onclick="deleteBok()">delete book</button>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="search">
+        <h2>search book</h2>
+        <input id="searchBy">   
+        <h3>search by:</h3>
+        <label for="searchTitle">Title</label>
+        <input id="searchTitle" type="radio" name="search">
+        <label for="searchAuthor">Author</label>
+        <input id="searchAuthor" type="radio" name="search">
+        <label for="searchGenre">Genre</label>
+        <input id="searchGenre" type="radio" name="search">
+        <label for="searchYear">Year</label>
+        <input id="searchYear" type="radio" name="search">
+        <br>
+        <br>
+        <button onclick="searchBok()">search</button>
+        <br>
+        <h1 id="searchResult"></h1>
+    </div>
+
+    <!--
+    <div class="show">
+        <button onclick="showAll()">show all books</button>
+        <h1 id="showed"></h1>
+    </div>
+-->
+
+    <!-- <button onclick="showBok()">show books</button> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
