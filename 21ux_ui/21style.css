@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    margin: 0;
+    color: #2E282A;
+    background-color: #E6FDFF;
+    font-family: Rubik;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #64E9EE;
+    padding: 0.5vh;
+}
+
+nav:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+}
+
+.cardBody{
+    margin: 3vh;
+    width: 50vh;
+    height: 36vh;
+    background-color: #64E9EE;
+    border-radius: 4vh;
+}
+
+.cardBody:hover{
+    transform: scale(1.1);
+    transition: all 1s ease;
+    box-shadow: 0 0 25px #64E9EE, 0 0 5px #E6FDFF;
+}
+
+.cardTitle {
+    font-size: 3vh;
+}
+
+.cardText {
+    font-weight: bold;
+}
+
+.cardButton{
+    height: 10vh;
+    width: 20vh;
+    background-color: #E6FDFF;
+    border: none;
+    border-radius: 1vh;
+    font-weight: bold;
+}
+
+.cardButton:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+    box-shadow: 0 0 5px #E6FDFF, 0 0 25px #64E9EE;
+}
+
+.burons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
