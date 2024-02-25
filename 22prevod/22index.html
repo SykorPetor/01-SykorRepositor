@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="22style.css">
+</head>
+
+<body>
+    <p>Asi by to chtělo jiný font, co?</p>
+    <!--    PŘEVODNÍK      -->
+
+    <div class="prevodnik">
+        <h2 class="jo">Převodník měn</h2>
+        <div class="preMain">
+            <div class="prevod">
+
+                <label for="input">Převést</label>
+                <input type="number" class="moni" id="input">
+
+                <div class="input">
+                    <label for="CZK">CZK:</label>
+                    <input class="radio" type="radio" name="in" id="CZKi">
+                    <label for="CZK">EUR:</label>
+                    <input class="radio" type="radio" name="in" id="EURi">
+                    <label for="CZK">USD:</label>
+                    <input class="radio" type="radio" name="in" id="USDi">
+                </div>
+
+                <h3>na</h3>
+
+                <div class="output">
+                    <label for="CZK">CZK:</label>
+                    <input class="radio" type="radio" name="out" id="CZKo">
+                    <label for="CZK">EUR:</label>
+                    <input class="radio" type="radio" name="out" id="EURo">
+                    <label for="CZK">USD:</label>
+                    <input class="radio" type="radio" name="out" id="USDo">
+                </div>
+
+                <button class="button" onclick="prevod()">Převést</button>
+
+                <h3 id="output"></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="space"></div>
+
+
+    <!--    INVESTICE      -->
+
+    <div class="invest">
+        <h2 class="jo">Výpočet investicí</h2>
+        <div class="invMain">
+            <div class="row">
+                <label for="invStart">Počáteční investice</label>
+                <input class="invInput" type="number" id="invStart">
+                <label for="invStart">Kč</label>
+            </div>
+            <div class="row">
+                <label for="invMonth">Měsíční vklad</label>
+                <input class="invInput" type="number" id="invMonth">
+                <label for="invMonth">Kč</label>
+            </div>
+            <div class="row">
+                <label for="invPercent">Roční úrok</label>
+                <input class="invInput" type="number" id="invPercent">
+                <label for="invPercent">%</label>
+            </div>
+            <div class="row">
+                <label for="invTime">Investice po dobu</label>
+                <input class="invInput" type="number" id="invTime">
+                <label for="invTime">Let</label>
+            </div>
+            <button class="invButton" onclick="invest()">Vypočítat zisk</button>
+            <h3 id="invOutput">x</h3>
+        </div>
+    </div>
+
+
+    <div class="space"></div>
+
+    <!--    DPH     -->
+
+    <div class="dph">
+        <h2 class="jo">Výpočet DPH</h2>
+        <div class="dphMain">
+            <div class="row">
+                <label for="inputDPH">Základ</label>
+                <input class="invInput" type="number" id="inputDPH">
+                <label for="inputDPH">Kč</label>
+            </div>
+            <div class="row">
+                <label for="dphInput">Při DPH</label>
+                <input class="invInput" id="dphInput">
+                <label for="dphInput">%</label>
+            </div>
+            <div class="options">
+                <div class="option">
+                    <label for="w0DPH">Přidat DPH</label>
+                    <input class="radio" type="radio" name="dph" id="woDPH">
+                </div>
+                <div class="option">
+                    <label for="wDPH">Odstranit DPH</label>
+                    <input class="radio" type="radio" name="dph" id="wDPH">
+                </div>
+            </div>
+            <button class="invButton" onclick="dph()">Spočítat DPH</button>
+            <h2 id="dphOut"></h2>
+        </div>
+    </div>
+
+    <script src="22script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Micro+5&display=swap');
+
+*{
+    font-family: "Micro 5", sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.space {
+    height: 20vh;
+}
+
+body {
+    height: 340vh;
+    background-color: #FFFFFF;
+    color: #4C5454;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+.radio {
+    width: 4vh;
+    height: 4vh;
+}
+
+.jo {
+    padding: 2vh;
+    border: 0.5vh solid #25D0B9;
+    border-radius: 2vh;
+}
+
+.prevodnik {
+    text-align: center;
+}
+
+.preMain {
+    border: 0.5vh solid #25D0B9;
+    border-radius: 3vh;
+    width: 80vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moni {
+    background-color: #25D0B9;
+    border-radius: 1vh;
+    border: none;
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+
+.button {
+    margin-top: 3vh;
+    background-color: #25D0B9;
+    border-radius: 1vh;
+    border: none;
+    font-size: 5vh;
+}
+
+.prevod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* investice*/
+
+
+.invest {
+    text-align: center;
+}
+
+.invMain {
+    border: 0.5vh solid #25D0B9;
+    border-radius: 3vh;
+    width: 80vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.invInput {
+    height: 5vh;
+    width: 25vh;
+    background-color: #25D0B9;
+    border-radius: 1vh;
+    border: none;
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-block: 4vh;
+}
+
+.invButton {
+    background-color: #25D0B9;
+    border-radius: 1vh;
+    border: none;
+    font-size: 5vh;
+}
+
+/* DPH*/
+
+.dph {
+    text-align: center;
+}
+
+.dphMain {
+    border: 0.5vh solid #25D0B9;
+    border-radius: 3vh;
+    width: 80vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
