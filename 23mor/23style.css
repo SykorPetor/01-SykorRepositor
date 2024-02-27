@@ -1,0 +1,46 @@
+* {
+    background-color: #C0B7B1;
+    color: #433E3F;
+}
+
+body {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+.main {
+    border: 1vh solid #C69C72;
+    height: 70vh;
+    width: 60vh;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C0B7B1;
+}
+
+.item {
+    margin: 1vh;
+}
+
+button {
+    border: 1vh solid #C69C72;
+    height: 12vh;
+    width: 30vh;
+    border-radius: 2vh;
+    background-color: #C0B7B1;
+    font-size: 8vh;
+}
+
+input {
+    border: 1vh solid #C69C72;
+    height: 8vh;
+    width: 40vh;
+    border-radius: 3vh;
+    background-color: #C0B7B1;
+    font-size: 4vh;
+}
