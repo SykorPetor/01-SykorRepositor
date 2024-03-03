@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="24style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <h2>Fitnes aplikace</h2>
+  </div>
+  <div class="mainContainer">
+    <div class="graph">
+      <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    </div>
+
+    <div class="table">
+      <table class="graph">
+        <tr>
+          <th>Den</th>
+          <th>Aktivita</th>
+          <th>Doba</th>
+          <th>Vzdálenost</th>
+        </tr>
+        <tr>
+          <td>Pondělí</td>
+          <td>Běh</td>
+          <td>30 minut</td>
+          <td>5 km</td>
+        </tr>
+        <tr>
+          <td>Úterý</td>
+          <td>Běh</td>
+          <td>20 minut</td>
+          <td>3 km</td>
+        </tr>
+        <tr>
+          <td>Středa</td>
+          <td>Nic</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Čtvrtek</td>
+          <td>Kolo</td>
+          <td>60 minut</td>
+          <td>15 km</td>
+        </tr>
+        <tr>
+          <td>Pátek</td>
+          <td>Kolo</td>
+          <td>45 minut</td>
+          <td>12 km</td>
+        </tr>
+        <tr>
+          <td>Sobota</td>
+          <td>Nic</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Neděle</td>
+          <td>Posilovna</td>
+          <td>120 minut</td>
+          <td>-</td>
+        </tr>
+      </table>
+      <button class="button">Změnit informace</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <h1>Průměry:</h1>
+    <table>
+      <tr>
+        <td>Průměrná vzdálenost na kole:</td>
+        <td>13,5 km</td>
+      </tr>
+      <tr>
+        <td>Průměrná doba na kole:</td>
+        <td>52,5 minut</td>
+      </tr>
+      <tr>
+        <td>Průměrná vzdálenost běhu:</td>
+        <td>4 km</td>
+      </tr>
+      <tr>
+        <td>Průměrná doba běhu:</td>
+        <td>25 minut</td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="24script.js"></script>
+</body>
+
+</html>
