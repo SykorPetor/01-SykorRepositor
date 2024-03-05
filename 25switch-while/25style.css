@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+}
+
+.ukol {
+    width: 50vh;
+    height: 50vh;
+    margin: 2vh;
+    border: 0.5vh solid #000000;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 10vh;
+    height: 5vh;
+    margin: 5vh;
+    border: none;
+    border-radius: 2vh;
+    background-color: #ff5500;
+}
+
+button:hover {
+    transform: scale(1.5);
+    transition: all 1s ease;
+}
+
+input {
+    width: 7vh;
+    height: 4vh;
+    margin: 5vh;
+    border-radius: 2vh;
+}
