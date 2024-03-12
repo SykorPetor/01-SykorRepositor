@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    margin-top: 20vh;
+}
+
+.display {
+    margin-bottom: 8vh;
+    width: 36vh;
+    height: 6vh;
+    border: none;
+    border-color: aqua;
+    border-radius: 1vh;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.display:hover {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.4);
+    transition: all 0.5s ease;
+}
+
+button {
+    border: none;
+    margin: 1vh;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.4);
+    border-radius: 1vh;
+    background-color: white;
+
+}
+
+button:hover {
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
+}
+
+.normal {
+    width: 8vh;
+    height: 8vh;
+}
+
+.medium {
+    width: 18vh;
+    height: 8vh;
+}
