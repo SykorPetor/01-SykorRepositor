@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+* {
+    font-family: "Allerta Stencil", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+button {
+    border: none;
+    border-radius: 2vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -1.5vh;
+    padding: 1.5vh;
+    background-color: #41658A;
+}
+
+.darkMode {
+    color: white;
+    background-color: black;
+    width: auto;
+    height: 6vh;
+    font-size: 3vh;
+}
+
+.register {
+    color: white;
+    background-color: black;
+    width: auto;
+    height: 6vh;
+    font-size: 3vh;
+}
+
+.signIn {
+    color: white;
+    background-color: black;
+    width: auto;
+    height: 6vh;
+    font-size: 3vh;
+}
+
+.jeden {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50vh;
+    height: 65vh;
+    border: none;
+    border-radius: 4vh;
+    box-shadow: 1vh 1vh 1vh 1vh #999999;
+}
+
+.bitin {
+    width: 15vh;
+    height: 6vh;
+    font-size: 3vh;
+}
