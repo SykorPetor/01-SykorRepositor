@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sledovač sociálních sítí</title>
+</head>
+
+<body>
+    <div class="hodiny">
+        <span id="zobrazeniHodin"></span>
+    </div>
+
+    <div class="casovac">
+        <h2>Časovač</h2>
+        <button id="spustitCasovac">Spustit</button>
+        <button id="resetovatCasovac">Resetovat</button>
+        <div id="zobrazeniCasovace">00:00:00</div>
+    </div>
+
+    <div class="stopky">
+        <h2>Stopky</h2>
+        <button id="spustitStopky">Spustit</button>
+        <button id="zastavitStopky">Zastavit</button>
+        <button id="resetovatStopky">Resetovat</button>
+        <div id="zobrazeniStopky">00:00:00</div>
+        <button id="ulozitCas">Uložit čas</button>
+        <div id="historieCasu"></div>
+    </div>
+
+    <div class="nastavitelny">
+        <h2>Nastavitelný časovač</h2>
+        <input type="number" id="nastav">
+        <label for="nastav">sekund</label>
+        <button onclick="nastavitelny()">spustit</button>
+    </div>
+
+    <script src="28script.js"></script>
+</body>
+
+</html>
