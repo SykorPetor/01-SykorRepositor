@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Notes App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #notes-container {
+            margin-top: 20px;
+        }
+
+        .note {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .note-actions {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Local Storage Notes App</h1>
+    <div>
+        <textarea id="note-input" placeholder="Sem napiš svou poznámku"></textarea>
+        <button onclick="saveNote()">Uložit</button>
+    </div>
+    <div id="notes-container"></div>
+
+    <script>
+        function saveNote() {
+            var noteText = document.getElementById('note-input').value;
+            if (noteText.trim() === '') {
+                alert('Napiš něco');
+                return;
+            }
+
+            var currentDate = new Date();
+            var note = {
+                text: noteText,
+                createdAt: currentDate.toLocaleString(),
+                lastModified: currentDate.toLocaleString()
+            };
+
+            var notes = JSON.parse(localStorage.getItem('notes')) || [];
+            notes.push(note);
+            localStorage.setItem('notes', JSON.stringify(notes));
+
+            document.getElementById('note-input').value = '';
+            displayNotes();
+        }
+
+        function editNote(index) {
+            var notes = JSON.parse(localStorage.getItem('notes'));
+            var updatedNoteText = prompt('edit', notes[index].text);
+            if (updatedNoteText !== null) {
+                notes[index].text = updatedNoteText;
+                notes[index].lastModified = new Date().toLocaleString();
+                localStorage.setItem('notes', JSON.stringify(notes));
+                displayNotes();
+            }
+        }
+
+        function deleteNote(index) {
+            var notes = JSON.parse(localStorage.getItem('notes'));
+            notes.splice(index, 1);
+            localStorage.setItem('notes', JSON.stringify(notes));
+            displayNotes();
+        }
+
+        function displayNotes() {
+            var notesContainer = document.getElementById('notes-container');
+            var notes = JSON.parse(localStorage.getItem('notes')) || [];
+            notesContainer.innerHTML = '';
+
+            notes.forEach(function (note, index) {
+                var noteElement = document.createElement('div');
+                noteElement.classList.add('note');
+                noteElement.innerHTML = `
+                    <p>${note.text}</p>
+                    <small>Created: ${note.createdAt}</small>
+                    <small>Last Modified: ${note.lastModified}</small>
+                    <div class="note-actions">
+                        <button onclick="editNote(${index})">Edit</button>
+                        <button onclick="deleteNote(${index})">Delete</button>
+                    </div>
+                `;
+                notesContainer.appendChild(noteElement);
+            });
+        }
+
+        displayNotes();
+    </script>
+</body>
+
+</html>
