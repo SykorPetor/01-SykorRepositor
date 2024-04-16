@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="32style.css">
+</head>
+
+<body>
+    <h1>Generování a ukládání hesel</h1>
+    <div class="gen">
+        <h2>Generátor hesel</h2>
+        <input id="passLen" type="number" placeholder="délka hesla">
+        <button onclick="passwordGen()">Vygenerovat heslo</button>
+        <h3 id="output"></h3>
+    </div>
+
+    <div class="save">
+        <h2>Ukládání hesel</h2>
+        <input id="nameFor" type="text" placeholder="Jméno">
+        <input id="passFor" type="text" placeholder="Heslo">
+        <button onclick="savePassword()">Uložit informace</button>
+
+        <button onclick="see()">Najít informace</button>
+        <h3 id="seePass"></h3>
+    </div>
+
+    <button onclick="clearo()">Vymazat všechny informace</button>
+
+    <script src="32script.js"></script>
+</body>
+
+</html>
