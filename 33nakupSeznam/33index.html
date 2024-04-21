@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <style>
+        /* Some basic styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Shopping List</h2>
+    <input type="text" id="itemInput" placeholder="Add Item">
+    <button onclick="addItem()">Add</button>
+    <ul id="shoppingList"></ul>
+
+    <script>
+        // Function to add an item to the list
+        function addItem() {
+            var input = document.getElementById("itemInput");
+            var item = input.value;
+            if (item.trim() !== "") {
+                var list = document.getElementById("shoppingList");
+                var listItem = document.createElement("li");
+                var checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                listItem.appendChild(checkbox);
+                listItem.appendChild(document.createTextNode(item));
+                var deleteBtn = document.createElement("button");
+                deleteBtn.innerText = "Delete";
+                deleteBtn.onclick = function () {
+                    listItem.remove();
+                    saveList();
+                };
+                listItem.appendChild(deleteBtn);
+                list.appendChild(listItem);
+                input.value = "";
+                saveList();
+            } else {
+                alert("Please enter an item.");
+            }
+        }
+
+        // Function to save the list to localStorage
+        function saveList() {
+            var items = [];
+            var list = document.getElementById("shoppingList").getElementsByTagName("li");
+            for (var i = 0; i < list.length; i++) {
+                items.push({
+                    name: list[i].childNodes[1].textContent,
+                    checked: list[i].getElementsByTagName("input")[0].checked
+                });
+            }
+            localStorage.setItem("shoppingList", JSON.stringify(items));
+        }
+
+        // Function to load the list from localStorage
+        function loadList() {
+            var savedList = localStorage.getItem("shoppingList");
+            if (savedList) {
+                var items = JSON.parse(savedList);
+                var list = document.getElementById("shoppingList");
+                for (var i = 0; i < items.length; i++) {
+                    var listItem = document.createElement("li");
+                    var checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    checkbox.checked = items[i].checked;
+                    checkbox.onchange = saveList;
+                    listItem.appendChild(checkbox);
+                    listItem.appendChild(document.createTextNode(items[i].name));
+                    var deleteBtn = document.createElement("button");
+                    deleteBtn.innerText = "Delete";
+                    deleteBtn.onclick = function () {
+                        listItem.remove();
+                        saveList();
+                    };
+                    listItem.appendChild(deleteBtn);
+                    list.appendChild(listItem);
+                }
+            }
+        }
+
+        // Load the list when the page loads
+        window.onload = loadList;
+
+    </script>
+</body>
+
+</html>
