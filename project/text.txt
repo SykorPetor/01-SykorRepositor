@@ -1,0 +1,25 @@
+Časovač pro skládání rubikovy kostky
+
+Chtěl jsem udělat časovač který by umožnil si ve stránce časovat si délku skládání při každé možnosti
+Věděl jsem že většina pokročilých lidí s kostkami dokážou složit kostku do minuty, tedy v rámci desítek vteřin, a že velice záleží na setinách
+Proto jsou ve stránce v časovači znázorněné setiny a vteřiny, ale i minuty pro začátečníky.
+
+Důvod proč jsem si vybral toto téma, je protože už témeř rok se zabívám skládáním rubikovy kostky, stalo se to jedním z mých hlavních koníčků
+a sám dobře chápu nutnost zaznamenat si dobu za kterou jsem dokončil. Tím že jsem kostku skládal procentně jednu z největších částí svého
+volného času, a z mých ostatních koníčků mi nepřišlo nic vhodné tak jsem právě přemýšlel že udělám stránku s koskami spojenou.
+(Taky protože mi to poradil učitel)
+A to jsou moje důvody proč jsem si vybral zrovna téma o kostkách
+
+Stánka nabízí možnost spuštění časovače pro skládání, pomocí kliknutí na tlačítko, které má ale možnost být spuštěno i kliknutím na mezerník
+na fyzické klávesnici pro pohodlnost.
+Generátor náhodného zamýchání podle kterého má uživatel možnost se řídit při svém skládání
+Možnost uložit si čas složení
+Ze začátku stánka ukazuje jenom generátor, časovač, a uložení času, ovšem po kliknutí na tlačítko pod tlačítkem pro uložení se ukáže zbytek stránky
+ve kterém jsou hlavní částí uložené časy u kterých je uvedeno i datum a čas uložení a tlačítko pro smazání uloženého času
+Dále pod uloženými časy jsou přes iFrame youtube videa, návod pro složení kostky začátečnickou metodou, a video vysveětlující notaci a 
+algoritmy používáné na kostku
+
+Hádám že podobná stránka by zaujala podobné lidi jako jsem já, které baví skládání kostek a ukádání/poměřování časů
+Stránka by jim pomohla časovat si skládání aniž by si musely zakoupit speciální časovač pro skládání, a nebo používat mobilní aplikaci.
+
+(ještě je v souborech logo ale to jsem nevěděl jak zakomponovat do designu)

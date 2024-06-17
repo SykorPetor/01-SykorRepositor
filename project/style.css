@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+* {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #28CCC7;
+}
+
+/* MAINS */
+
+.head {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main {
+    height: 80vh;
+    width: 120vh;
+    background-color: #FFB133;
+    border-radius: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.foot {
+    height: auto;
+    width: 120vh;
+    border-radius: 4vh;
+    text-align: center;
+    background-color: #FFB133;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+}
+
+.video {
+    margin: 5vh;
+}
+
+.savedSolves {
+    margin-bottom: 20vh;
+    height: auto;
+    width: 120vh;
+    border-radius: 4vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solves {
+    padding-block: 5vh;
+    height: auto;
+    width: 120vh;
+    border-radius: 4vh;
+    text-align: center;
+    background-color: #FFB133;
+    display: grid;
+    grid-template-columns: repeat(6, 15vh);
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.solveInside {
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solve-container {
+    border-radius: 2vh;
+    height: 18vh;
+    width: 15vh;
+    background-color: #E92020;
+}
+
+/* BUTTONS */
+
+.smallButton {
+    height: 5vh;
+    width: auto;
+    background-color: #28CCC7;
+    border-radius: 2vh;
+    border: none;
+    margin-top: 2vh;
+}
+
+.middleButton {
+    height: 6vh;
+    width: auto;
+    background-color: #E92020;
+    border-radius: 2vh;
+    border: none;
+    margin-top: 2vh;
+}
+
+.largeButton {
+    height: 15vh;
+    font-size: 8vh;
+    width: auto;
+    background-color: #E92020;
+    border-radius: 2vh;
+    border: none;
+}
+
+/* NOT SO IMPORTANT */
+
+.time {
+    font-size: 10vh;
+}
+
+.solvesText {
+    height: auto;
+    width: 40vh;
+    border-radius: 4vh;
+    text-align: center;
+    background-color: #FFB133;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherBtn {
+    margin-top: 1vh;
+    background-color: #E92020;
+    border: none;
+    border-radius: 1vh;
+}
+
+.other {
+    display: none;
+}
+
+.notOther {
+    height: 90vh;
+}
+
+.deleteBtn {
+    border: none;
+    border-radius: 1vh;
+    background-color: #28CCC7;
+}

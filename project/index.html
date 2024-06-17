@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubing timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="notOther" id="notOther">
+        <div class="head" id="head">
+            <h1>Timer for 3x3 rubiks cubes</h1>
+        </div>
+
+
+        <div class="main">
+            <button class="smallButton" onclick="generateScramble()">Generate scramble!</button>
+            <label for="scrambleOutput">Scramble:</label>
+            <h1 class="scrambleOutput" id="scrambleOutput"></h1>
+            <h1 class="time" id="time">0:0:0</h1>
+            <button class="largeButton" onclick="timer()" id="timerButton">Start Timer</button>
+            <button class="middleButton" onclick="saveSolve()">Save Solve</button>
+            <button class="smallButton" onclick="otherF()" id="otherBtn">show rest</button>
+        </div>
+    </div>
+
+
+    <div class="other" id="other">
+        <div class="savedSolves">
+            <h2 class="solvesText">Saved solves</h2>
+            <div class="solves" id="savedSolves">
+
+            </div>
+        </div>
+
+
+        <div class="foot">
+            <h2>If you CAN'T solve the rubiks cube, OR jou want to learn notation <br>
+                check out these videos!</h2>
+            <div class="videos">
+                <div class="column">
+                    <p>Learn 3x3 Rubiks Cube</p>
+                    <iframe class="video" width="360" height="200"
+                        src="https://youtu.be/zGu4QSKmj4Y?si=QAxSkIlGnaI4iEbT">
+                    </iframe>
+
+                </div>
+
+                <div class="column">
+                    <p>Learn notation for the 3x3 Rubiks Cube</p>
+                    <iframe class="video" width="360" height="200"
+                        src="https://youtu.be/24eHm4ri8WM?si=PgW1T7V9R78Hg7T2">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
